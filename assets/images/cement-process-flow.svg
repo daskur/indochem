@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">Cement production process flow</title>
+  <desc id="desc">Raw materials, crushing, preheating, kiln clinker, grinding and cement packaging.</desc>
+  <rect width="900" height="260" fill="#f4f8f9"/>
+  <g fill="#fff" stroke="#123a5a" stroke-width="3">
+    <rect x="20" y="80" width="120" height="90" rx="12"/>
+    <rect x="180" y="80" width="120" height="90" rx="12"/>
+    <rect x="340" y="80" width="120" height="90" rx="12"/>
+    <rect x="500" y="80" width="120" height="90" rx="12"/>
+    <rect x="660" y="80" width="120" height="90" rx="12"/>
+  </g>
+  <g fill="#123a5a" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="80" y="118">Raw Materials</text><text x="80" y="142">Limestone + Clay</text>
+    <text x="240" y="118">Crushing</text><text x="240" y="142">Raw Meal</text>
+    <text x="400" y="118">Preheating</text><text x="400" y="142">Calcination</text>
+    <text x="560" y="118">Rotary Kiln</text><text x="560" y="142">Clinker</text>
+    <text x="720" y="118">Grinding</text><text x="720" y="142">Cement</text>
+  </g>
+  <g fill="#087f7a" stroke="#087f7a" stroke-width="4">
+    <path d="M140 125h35M300 125h35M460 125h35M620 125h35" fill="none"/>
+    <path d="l-12-8 0 16zM315 125l-12-8 0 16zM475 125l-12-8 0 16zM635 125l-12-8 0 16z"/>
+  </g>
+  <path d="M780 125h65v55h-120v35" fill="none" stroke="#087f7a" stroke-width="4"/>
+  <g fill="#123a5a" font-family="Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="750" y="225">Quality Test + Packaging</text>
+    <text x="450" y="38">CEMENT MANUFACTURING PROCESS</text>
+  </g>
+</svg>

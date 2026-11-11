@@ -1,0 +1,99 @@
+@media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-menu {
+        position: absolute; left: 16px; right: 16px; top: 68px;
+        display: none; align-items: stretch; flex-direction: column; gap: 0;
+        padding: 12px; border: 1px solid var(--border); border-radius: 10px;
+        background: white; box-shadow: var(--shadow);
+    }
+    .nav-menu.is-open { display: flex; }
+    .nav-menu a { padding: 10px; }
+    .footer-grid { flex-direction: column; }
+}
+@media (max-width: 600px) {
+    .container { width: min(100% - 24px, 1160px); }
+    .brand small { display: none; }
+    .search-bar { flex-direction: column; }
+    .dashboard-actions { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+    .home-hero-grid { grid-template-columns: 1fr; gap: 28px; }
+    .hero-panel { grid-template-columns: repeat(3, 1fr); }
+    .hero-panel div { border-right: 1px solid rgba(255,255,255,.12); border-bottom: 0; }
+    .hero-panel div:last-child { border-right: 0; }
+    .process-card-grid, .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .quick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .process-layout { grid-template-columns: 1fr; }
+    .learning-sidebar { position: static; }
+    .learning-sidebar nav { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .process-header { align-items: start; flex-direction: column; }
+    .listing-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .process-filter { grid-template-columns: 1fr 180px auto; }
+    .library-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .equipment-layout { grid-template-columns: 1fr; }
+    .equipment-sidebar { position: static; }
+    .equipment-sidebar nav { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .chemical-header { grid-template-columns: 100px minmax(0,1fr); }
+    .chemical-hero-formula { width: 100px; height: 100px; }
+    .calculator-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .safety-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .diagram-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .diagram-filter { grid-template-columns: 1fr 220px auto; }
+    .video-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .quiz-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .glossary-filter { grid-template-columns: 1fr 180px auto; }
+}
+@media (max-width: 600px) {
+    .home-hero { padding: 44px 0; }
+    .hero-panel { grid-template-columns: 1fr; }
+    .hero-panel div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .hero-panel div:last-child { border-bottom: 0; }
+    .section-heading { align-items: start; flex-direction: column; }
+    .process-card-grid, .news-grid, .quick-grid { grid-template-columns: 1fr; }
+    .process-card p { min-height: 0; }
+    .module-heading { align-items: start; flex-direction: column; }
+    .process-filter { grid-template-columns: 1fr; }
+    .listing-grid,.info-grid,.step-detail-grid { grid-template-columns: 1fr; }
+    .step-card { grid-template-columns: 42px minmax(0,1fr); padding: 14px; }
+    .step-number { width: 42px; height: 42px; }
+    .learning-sidebar nav { grid-template-columns: 1fr; }
+    .process-section { padding: 20px; }
+    .progress-summary { width: 100%; min-width: 0; }
+    .library-grid { grid-template-columns: 1fr; }
+    .library-card { grid-template-columns: 72px minmax(0,1fr); }
+    .equipment-header { grid-template-columns: 1fr; }
+    .equipment-hero-icon { width: 88px; height: 88px; }
+    .equipment-sidebar nav { grid-template-columns: 1fr; }
+    .equipment-filter { grid-template-columns: 1fr; }
+    .chemical-header { grid-template-columns: 1fr; }
+    .chemical-hero-formula { width: 88px; height: 88px; }
+    .calculator-grid,.form-grid { grid-template-columns: 1fr; }
+    .diagram-grid,.diagram-related-grid { grid-template-columns: 1fr; }
+    .diagram-header { align-items: start; flex-direction: column; }
+    .diagram-filter { grid-template-columns: 1fr; }
+    .video-grid { grid-template-columns: 1fr; }
+    .video-filter { grid-template-columns: 1fr; }
+    .quiz-grid { grid-template-columns: 1fr; }
+    .quiz-filter { grid-template-columns: 1fr; }
+    .glossary-filter { grid-template-columns: 1fr; }
+    .safety-grid { grid-template-columns: 1fr; }
+    .siwes-summary { grid-template-columns: 1fr; }
+    .siwes-report-grid { grid-template-columns: 1fr; }
+    .siwes-table th:nth-child(3), .siwes-table td:nth-child(3) { display: none; }
+    .profile-summary { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .profile-layout { grid-template-columns: 1fr; }
+    .profile-header { align-items: start; flex-direction: column; }
+    .bookmark-grid { grid-template-columns: 1fr; }
+    .bookmark-filter { grid-template-columns: 1fr; }
+    .process-header-actions { margin-left: 0; }
+    .certificate-grid { grid-template-columns: 1fr; }
+    .certificate-document { padding: 12px; }
+    .certificate-border { min-height: 420px; padding: 28px 20px; }
+    .certificate-verification-row { grid-template-columns: 1fr; }
+    .news-filter { grid-template-columns: 1fr; }
+    .news-listing-grid { grid-template-columns: 1fr; }
+    .notification-card .card-body { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}

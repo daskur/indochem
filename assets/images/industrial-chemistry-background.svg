@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">Industrial chemistry plant background</title>
+  <description id="description">An abstract blue industrial plant with tanks, pipes, gauges, and connected molecules.</description>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcecf4"/>
+      <stop offset="0.55" stop-color="#c5dee7"/>
+      <stop offset="1" stop-color="#edf4f6"/>
+    </linearGradient>
+    <linearGradient id="tank" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4fafb" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#a9cbd5" stop-opacity=".82"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1320" cy="170" r="250" fill="#ffffff" opacity=".24" filter="url(#soft)"/>
+  <circle cx="250" cy="760" r="300" fill="#087f7a" opacity=".08" filter="url(#soft)"/>
+
+  <g fill="none" stroke="#123a5a" stroke-width="18" stroke-linecap="round" opacity=".42">
+    <path d="M0 690h210v-310h180v310h220v-430h170v430h250v-260h190v260h180"/>
+    <path d="M390 380h430"/>
+    <path d="M780 260h250"/>
+    <path d="M1020 260v170"/>
+    <path d="M1210 430h250"/>
+  </g>
+
+  <g opacity=".5">
+    <rect x="210" y="380" width="180" height="310" rx="24" fill="url(#tank)" stroke="#123a5a" stroke-width="10"/>
+    <path d="M210 460h180M210 540h180M210 620h180" stroke="#087f7a" stroke-width="8"/>
+    <rect x="610" y="260" width="170" height="430" rx="24" fill="url(#tank)" stroke="#123a5a" stroke-width="10"/>
+    <path d="M610 350h170M610 430h170M610 510h170M610 590h170" stroke="#087f7a" stroke-width="8"/>
+    <rect x="1030" y="430" width="180" height="260" rx="24" fill="url(#tank)" stroke="#123a5a" stroke-width="10"/>
+    <path d="M1030 500h180M1030 570h180M1030 640h180" stroke="#087f7a" stroke-width="8"/>
+  </g>
+
+  <g fill="#087f7a" opacity=".36">
+    <circle cx="90" cy="180" r="10"/><circle cx="150" cy="210" r="10"/><circle cx="210" cy="150" r="10"/>
+    <path d="M90 180l60 30 60-60" fill="none" stroke="#087f7a" stroke-width="6"/>
+  </g>
+  <g fill="#123a5a" opacity=".28">
+    <circle cx="1380" cy="680" r="12"/><circle cx="1460" cy="620" r="12"/><circle cx="1510" cy="710" r="12"/><circle cx="1430" cy="760" r="12"/>
+    <path d="M1380 680l80-60 50 90-80 50z" fill="none" stroke="#123a5a" stroke-width="8"/>
+  </g>
+
+  <rect width="1600" height="900" fill="#0b2a43" opacity=".06"/>
+</svg>

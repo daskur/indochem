@@ -1,0 +1,375 @@
+:root {
+    --tap-target: 44px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 900px), (pointer: coarse) {
+    body {
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
+
+main,
+.admin-content,
+.process-content,
+.equipment-content,
+.calculator-layout,
+.profile-layout,
+.certificates-page,
+.search-page {
+    min-width: 0;
+}
+
+iframe,
+embed,
+object,
+video,
+canvas {
+    max-width: 100%;
+}
+
+iframe,
+video {
+    width: 100%;
+}
+
+pre,
+code,
+kbd,
+samp {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+textarea,
+select,
+input,
+button {
+    max-width: 100%;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+.navbar {
+    min-width: 0;
+}
+
+.nav-menu {
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
+}
+
+.button,
+.nav-toggle,
+.admin-actions button,
+.admin-actions select {
+    min-height: var(--tap-target);
+}
+
+.nav-toggle {
+    min-width: var(--tap-target);
+}
+
+.admin-table-wrap,
+.table-wrap,
+.siwes-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.admin-table-wrap .data-table,
+.table-wrap .data-table,
+.siwes-table {
+    min-width: 640px;
+}
+
+.admin-actions {
+    min-width: 180px;
+}
+
+.admin-actions form {
+    max-width: 100%;
+}
+
+.data-table th,
+.data-table td,
+.siwes-table th,
+.siwes-table td {
+    overflow-wrap: anywhere;
+}
+
+.search-bar,
+.process-filter,
+.diagram-filter,
+.equipment-filter,
+.video-filter,
+.quiz-filter,
+.glossary-filter,
+.news-filter,
+.bookmark-filter,
+.certificate-verification-row {
+    width: 100%;
+}
+
+.reaction-card code {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: min(1160px, calc(100% - 28px));
+    }
+
+    .nav-menu {
+        gap: 14px;
+    }
+
+    .calculator-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        min-height: 64px;
+    }
+
+    .nav-menu {
+        top: 64px;
+    }
+
+    .admin-layout {
+        min-height: auto;
+    }
+
+    .admin-sidebar {
+        position: relative;
+        padding: 10px;
+        gap: 6px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .admin-sidebar a {
+        flex: 0 0 auto;
+        padding-inline: 14px;
+    }
+
+    .admin-content {
+        padding: 20px;
+    }
+
+    .settings-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .calculator-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --radius: 10px;
+    }
+
+    .container {
+        width: calc(100% - 20px);
+    }
+
+    .site-header {
+        position: sticky;
+    }
+
+    .navbar {
+        min-height: 60px;
+    }
+
+    .brand-mark {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nav-menu {
+        left: 10px;
+        right: 10px;
+        top: 58px;
+        max-height: calc(100vh - 70px);
+    }
+
+    .nav-menu a,
+    .nav-menu .button,
+    .nav-logout button {
+        width: 100%;
+        min-height: var(--tap-target);
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-logout {
+        padding: 10px;
+    }
+
+    .home-hero {
+        padding: 36px 0;
+    }
+
+    .hero-copy h1 {
+        overflow-wrap: anywhere;
+    }
+
+    .search-bar .button {
+        width: 100%;
+    }
+
+    .section-heading .button {
+        width: 100%;
+    }
+
+    .card-body,
+    .process-section,
+    .admin-content {
+        padding: 16px;
+    }
+
+    .process-header,
+    .equipment-header,
+    .chemical-header {
+        padding: 20px;
+    }
+
+    .library-card {
+        grid-template-columns: 64px minmax(0, 1fr);
+    }
+
+    .step-card {
+        min-width: 0;
+    }
+
+    .step-content,
+    .process-content,
+    .equipment-content {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .reaction-card code {
+        font-size: .82rem;
+    }
+
+    .calculator-grid,
+    .settings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-bar,
+    .admin-search {
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+    .admin-search .button,
+    .process-filter .button,
+    .diagram-filter .button,
+    .equipment-filter .button,
+    .video-filter .button,
+    .quiz-filter .button,
+    .glossary-filter .button,
+    .news-filter .button,
+    .bookmark-filter .button {
+        width: 100%;
+    }
+
+    .admin-actions {
+        flex-direction: column;
+        align-items: stretch;
+        min-width: 0;
+    }
+
+    .admin-actions form {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-actions select,
+    .admin-actions .button {
+        width: 100%;
+    }
+
+    .admin-quick-actions > div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .admin-quick-actions .button,
+    .module-heading .button {
+        width: 100%;
+    }
+
+    .data-table,
+    .siwes-table {
+        font-size: .88rem;
+    }
+
+    .footer-grid {
+        gap: 20px;
+    }
+
+    .footer-grid nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        width: calc(100% - 16px);
+    }
+
+    .brand strong {
+        font-size: .92rem;
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+    }
+
+    .profile-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .library-card,
+    .step-card {
+        grid-template-columns: 1fr;
+    }
+
+    .step-number {
+        margin-bottom: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
